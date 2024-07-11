@@ -94,8 +94,3 @@ TC_Create_Tasks_itemName_isEMPTY
     Click Button Create Item
     Verify Empty List ToDoTask Tab
     Verify Empty List Completed Tab
-
-
-
-
-

@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     Component Test Step
 Library           SeleniumLibrary
-Resource           ../Keywords/TodoListComponent.robot
+Resource          ../Keywords/TodoListComponent.robot
 *** Keywords ***
 # Teststep
 Open Web Browser
@@ -12,7 +12,7 @@ Open Web Browser
 
 Switch Tab
     [Documentation]
-    ...   -  ADD ITEM Tab -> Switch Tab    Name=ADD_ITEM
+    ...   -  ADD ITEM Tab      -> Switch Tab    Name=ADD_ITEM
     ...   -  TO DO TASKS  Tab  -> Switch Tab    Name=TO_DO_TASKS
     ...   -  TO COMPLETED Tab  -> Switch Tab    Name=COMPLETED
 
@@ -50,7 +50,7 @@ To Done Task
     FOR    ${taskName}   IN   @{expectedDoneList}
         Log         ${taskName}
         Click Element       locator=//label[@for="1"]
-        Element Should Not Be Visible   
+        Element Should Not Be Visible
         ...    locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]
     END
 
