@@ -1,9 +1,11 @@
 How to set up device until runable
+<pre>
 Table of Contents
 1.Prerequisites
 2.Installation
 3.Project Structure
 4.Running Tests
+</pre>
 
 1.Prerequisites
 Before you begin, ensure you have the following installed on your machine:
