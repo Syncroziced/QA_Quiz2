@@ -48,7 +48,7 @@ QA_Quiz2/
 
 ![image](https://github.com/Syncroziced/QA_Quiz2/assets/130890785/b47bddd2-6a8c-47cd-b68e-1ab746b0bcf0)
 
-#[FINAL] How to run testcases (All/Specific Testcase)
+# [FINAL] How to run testcases (All/Specific Testcase)
 ![สกรีนช็อต 2024-07-12 010009](https://github.com/Syncroziced/QA_Quiz2/assets/130890785/ebeeb2cd-88e0-4f79-ae5d-437f4d3a2d0c)
 
 
