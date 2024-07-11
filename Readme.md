@@ -1,13 +1,13 @@
 How to set up device until runable
 
-#Table of Contents
-##1.Prerequisites
+# Table of Contents
+## 1.Prerequisites
   
-##2.Installation
+## 2.Installation
   
-##3.Project Structure
+## 3.Project Structure
   
-##4.Running Tests
+## 4.Running Tests
 
 
 1.Prerequisites
