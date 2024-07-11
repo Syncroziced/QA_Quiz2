@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-12T00:26:02.009986" rpa="false" schemaversion="5">
-<suite id="s1" name="QA Quiz2" source="C:\Users\Poland\Downloads\Examination BluePi_Naratip\QA_Quiz2">
-<suite id="s1-s1" name="Testsuite" source="C:\Users\Poland\Downloads\Examination BluePi_Naratip\QA_Quiz2\Testsuite">
-<suite id="s1-s1-s1" name="Quiz2 TodoList Testcases" source="C:\Users\Poland\Downloads\Examination BluePi_Naratip\QA_Quiz2\Testsuite\Quiz2_TodoList_Testcases.robot">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-12T00:49:41.804645" rpa="false" schemaversion="5">
+<suite id="s1" name="QA Quiz2" source="C:\Users\Poland\Downloads\QA_Quiz2">
+<suite id="s1-s1" name="Testsuite" source="C:\Users\Poland\Downloads\QA_Quiz2\Testsuite">
+<suite id="s1-s1-s1" name="Quiz2 TodoList Testcases" source="C:\Users\Poland\Downloads\QA_Quiz2\Testsuite\Quiz2_TodoList_Testcases.robot">
 <test id="s1-s1-s1-t1" name="TC_Create_2_Tasks_Success" line="17">
 <kw name="Open Web Browser" owner="TodoListTestStep" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:02.153286" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<msg time="2024-07-12T00:49:41.952161" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
 <arg>url=${URL}</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-12T00:26:02.152785" elapsed="1.708337"/>
+<status status="PASS" start="2024-07-12T00:49:41.952161" elapsed="2.074493"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-12T00:26:03.861623" elapsed="0.030054"/>
+<status status="PASS" start="2024-07-12T00:49:44.027155" elapsed="0.026498"/>
 </kw>
 <arg>${URL_WEB_TESTING}</arg>
 <doc>Open Browser following URL</doc>
-<status status="PASS" start="2024-07-12T00:26:02.152285" elapsed="1.739392"/>
+<status status="PASS" start="2024-07-12T00:49:41.951158" elapsed="2.102495"/>
 </kw>
 <variable name="@{expectedList}">
 <var>${TASK1}</var>
 <var>${TASK2}</var>
-<status status="PASS" start="2024-07-12T00:26:03.892176" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:44.054153" elapsed="0.000000"/>
 </variable>
 <variable name="@{expectedDoneList}">
 <var>${TASK1}</var>
 <var>${TASK2}</var>
-<status status="PASS" start="2024-07-12T00:26:03.892676" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:44.054653" elapsed="0.000000"/>
 </variable>
 <kw name="Create Item" owner="TodoListTestStep">
 <for flavor="IN">
@@ -37,80 +37,80 @@
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//input[@id="new-task"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:03.893676" elapsed="0.015508"/>
+<status status="PASS" start="2024-07-12T00:49:44.055652" elapsed="0.022002"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:03.909684" level="INFO">Typing text 'Register' into text field '//input[@id="new-task"]'.</msg>
+<msg time="2024-07-12T00:49:44.078154" level="INFO">Typing text 'Register' into text field '//input[@id="new-task"]'.</msg>
 <arg>locator=//input[@id="new-task"]</arg>
 <arg>text=${Name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:03.909184" elapsed="0.064256"/>
+<status status="PASS" start="2024-07-12T00:49:44.077654" elapsed="0.061010"/>
 </kw>
 <arg>${taskName}</arg>
 <doc>Input to textfield 'ItemName'</doc>
-<status status="PASS" start="2024-07-12T00:26:03.893676" elapsed="0.079764"/>
+<status status="PASS" start="2024-07-12T00:49:44.055652" elapsed="0.083012"/>
 </kw>
 <kw name="Click Button Create Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:03.973940" elapsed="0.015505"/>
+<status status="PASS" start="2024-07-12T00:49:44.139163" elapsed="0.013499"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:03.989944" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
+<msg time="2024-07-12T00:49:44.153162" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:03.989445" elapsed="0.035508"/>
+<status status="PASS" start="2024-07-12T00:49:44.152662" elapsed="0.032004"/>
 </kw>
 <doc>Click Button for Add item to 'To Do List'</doc>
-<status status="PASS" start="2024-07-12T00:26:03.973440" elapsed="0.051513"/>
+<status status="PASS" start="2024-07-12T00:49:44.138664" elapsed="0.046002"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:03.893176" elapsed="0.131777"/>
+<status status="PASS" start="2024-07-12T00:49:44.055153" elapsed="0.130013"/>
 </iter>
 <iter>
 <kw name="Input ItemName" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//input[@id="new-task"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.025953" elapsed="0.009000"/>
+<status status="PASS" start="2024-07-12T00:49:44.185665" elapsed="0.010501"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.035954" level="INFO">Typing text 'Login' into text field '//input[@id="new-task"]'.</msg>
+<msg time="2024-07-12T00:49:44.196166" level="INFO">Typing text 'Login' into text field '//input[@id="new-task"]'.</msg>
 <arg>locator=//input[@id="new-task"]</arg>
 <arg>text=${Name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.035454" elapsed="0.045499"/>
+<status status="PASS" start="2024-07-12T00:49:44.196166" elapsed="0.046507"/>
 </kw>
 <arg>${taskName}</arg>
 <doc>Input to textfield 'ItemName'</doc>
-<status status="PASS" start="2024-07-12T00:26:04.025453" elapsed="0.055500"/>
+<status status="PASS" start="2024-07-12T00:49:44.185166" elapsed="0.057507"/>
 </kw>
 <kw name="Click Button Create Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.081453" elapsed="0.011003"/>
+<status status="PASS" start="2024-07-12T00:49:44.243172" elapsed="0.009500"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.092959" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
+<msg time="2024-07-12T00:49:44.253172" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.092959" elapsed="0.029007"/>
+<status status="PASS" start="2024-07-12T00:49:44.253172" elapsed="0.024000"/>
 </kw>
 <doc>Click Button for Add item to 'To Do List'</doc>
-<status status="PASS" start="2024-07-12T00:26:04.080953" elapsed="0.041013"/>
+<status status="PASS" start="2024-07-12T00:49:44.243172" elapsed="0.034000"/>
 </kw>
 <var name="${taskName}">Login</var>
-<status status="PASS" start="2024-07-12T00:26:04.025453" elapsed="0.096513"/>
+<status status="PASS" start="2024-07-12T00:49:44.185166" elapsed="0.092508"/>
 </iter>
 <var>${taskName}</var>
 <value>@{itemList}</value>
-<status status="PASS" start="2024-07-12T00:26:03.893176" elapsed="0.229290"/>
+<status status="PASS" start="2024-07-12T00:49:44.055153" elapsed="0.222521"/>
 </for>
 <arg>itemList=${expectedList}</arg>
 <doc>Add task to TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:03.892676" elapsed="0.229790"/>
+<status status="PASS" start="2024-07-12T00:49:44.054653" elapsed="0.223021"/>
 </kw>
 <kw name="Switch Tab" owner="TodoListTestStep">
 <if>
@@ -118,34 +118,34 @@
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#add-item"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:04.123467" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.278673" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:04.122966" elapsed="0.000501"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.278173" elapsed="0.000500"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='TO_DO_TASKS'">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.123967" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
+<msg time="2024-07-12T00:49:44.279172" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
 <arg>//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.123967" elapsed="0.023999"/>
+<status status="PASS" start="2024-07-12T00:49:44.278673" elapsed="0.026010"/>
 </kw>
-<status status="PASS" start="2024-07-12T00:26:04.123467" elapsed="0.024999"/>
+<status status="PASS" start="2024-07-12T00:49:44.278673" elapsed="0.026511"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='COMPLETED'">
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:04.148466" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.305184" elapsed="0.000498"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:04.148466" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.305184" elapsed="0.000498"/>
 </branch>
-<status status="PASS" start="2024-07-12T00:26:04.122966" elapsed="0.025999"/>
+<status status="PASS" start="2024-07-12T00:49:44.278173" elapsed="0.027509"/>
 </if>
 <arg>Name=TO_DO_TASKS</arg>
 <doc>-  ADD ITEM Tab      -&gt; Switch Tab    Name=ADD_ITEM
 -  TO DO TASKS  Tab  -&gt; Switch Tab    Name=TO_DO_TASKS
 -  TO COMPLETED Tab  -&gt; Switch Tab    Name=COMPLETED</doc>
-<status status="PASS" start="2024-07-12T00:26:04.122466" elapsed="0.026499"/>
+<status status="PASS" start="2024-07-12T00:49:44.277674" elapsed="0.028008"/>
 </kw>
 <kw name="Verify ToDoTask" owner="TodoListTestStep">
 <kw name="Switch Tab" owner="TodoListTestStep">
@@ -154,152 +154,152 @@
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#add-item"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:04.149965" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.307183" elapsed="0.000500"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:04.149965" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.307183" elapsed="0.000500"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='TO_DO_TASKS'">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.150466" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
+<msg time="2024-07-12T00:49:44.308183" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
 <arg>//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.150466" elapsed="0.022500"/>
+<status status="PASS" start="2024-07-12T00:49:44.307683" elapsed="0.023999"/>
 </kw>
-<status status="PASS" start="2024-07-12T00:26:04.149965" elapsed="0.023503"/>
+<status status="PASS" start="2024-07-12T00:49:44.307683" elapsed="0.024500"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='COMPLETED'">
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:04.173468" elapsed="0.000498"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.332183" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:04.173468" elapsed="0.000498"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.332183" elapsed="0.000500"/>
 </branch>
-<status status="PASS" start="2024-07-12T00:26:04.149965" elapsed="0.024001"/>
+<status status="PASS" start="2024-07-12T00:49:44.307183" elapsed="0.025500"/>
 </if>
 <arg>Name=TO_DO_TASKS</arg>
 <doc>-  ADD ITEM Tab      -&gt; Switch Tab    Name=ADD_ITEM
 -  TO DO TASKS  Tab  -&gt; Switch Tab    Name=TO_DO_TASKS
 -  TO COMPLETED Tab  -&gt; Switch Tab    Name=COMPLETED</doc>
-<status status="PASS" start="2024-07-12T00:26:04.149466" elapsed="0.024500"/>
+<status status="PASS" start="2024-07-12T00:49:44.306682" elapsed="0.026001"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.174466" level="INFO">${index} = 0</msg>
+<msg time="2024-07-12T00:49:44.332683" level="INFO">${index} = 0</msg>
 <var>${index}</var>
 <arg>0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.173966" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:44.332683" elapsed="0.000499"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.175466" level="INFO">${index} = 1</msg>
+<msg time="2024-07-12T00:49:44.333683" level="INFO">${index} = 1</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.174966" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:44.333683" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.175965" level="INFO">Register</msg>
+<msg time="2024-07-12T00:49:44.334183" level="INFO">Register</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.175466" elapsed="0.000499"/>
+<status status="PASS" start="2024-07-12T00:49:44.334183" elapsed="0.000000"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.176467" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Register')]' contains exact text 'Register'.</msg>
+<msg time="2024-07-12T00:49:44.334683" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Register')]' contains exact text 'Register'.</msg>
 <arg>locator=//input[@id="${index}"]/..//span[contains(text(),'${taskName}')]</arg>
 <arg>expected=${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.175965" elapsed="0.015504"/>
+<status status="PASS" start="2024-07-12T00:49:44.334183" elapsed="0.014001"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:04.174966" elapsed="0.016503"/>
+<status status="PASS" start="2024-07-12T00:49:44.333182" elapsed="0.015002"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.191969" level="INFO">${index} = 2</msg>
+<msg time="2024-07-12T00:49:44.349182" level="INFO">${index} = 2</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.191969" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:44.348682" elapsed="0.000500"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.192969" level="INFO">Login</msg>
+<msg time="2024-07-12T00:49:44.349682" level="INFO">Login</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.192469" elapsed="0.001000"/>
+<status status="PASS" start="2024-07-12T00:49:44.349182" elapsed="0.000500"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.193469" level="INFO">Verifying element '//input[@id="2"]/..//span[contains(text(),'Login')]' contains exact text 'Login'.</msg>
+<msg time="2024-07-12T00:49:44.350183" level="INFO">Verifying element '//input[@id="2"]/..//span[contains(text(),'Login')]' contains exact text 'Login'.</msg>
 <arg>locator=//input[@id="${index}"]/..//span[contains(text(),'${taskName}')]</arg>
 <arg>expected=${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.193469" elapsed="0.013009"/>
+<status status="PASS" start="2024-07-12T00:49:44.349682" elapsed="0.012501"/>
 </kw>
 <var name="${taskName}">Login</var>
-<status status="PASS" start="2024-07-12T00:26:04.191469" elapsed="0.015009"/>
+<status status="PASS" start="2024-07-12T00:49:44.348682" elapsed="0.013501"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedList}</value>
-<status status="PASS" start="2024-07-12T00:26:04.174466" elapsed="0.032012"/>
+<status status="PASS" start="2024-07-12T00:49:44.333182" elapsed="0.029001"/>
 </for>
 <arg>expectedList=${expectedList}</arg>
 <doc>Verify task added on TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:04.148965" elapsed="0.057513"/>
+<status status="PASS" start="2024-07-12T00:49:44.306182" elapsed="0.056001"/>
 </kw>
 <kw name="To Done Task" owner="TodoListTestStep">
 <for flavor="IN">
 <iter>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.207978" level="INFO">Register</msg>
+<msg time="2024-07-12T00:49:44.363683" level="INFO">Register</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.207477" elapsed="0.000501"/>
+<status status="PASS" start="2024-07-12T00:49:44.363184" elapsed="0.000499"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.208477" level="INFO">Clicking element '//label[@for="1"]'.</msg>
+<msg time="2024-07-12T00:49:44.364183" level="INFO">Clicking element '//label[@for="1"]'.</msg>
 <arg>locator=//label[@for="1"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.207978" elapsed="0.033501"/>
+<status status="PASS" start="2024-07-12T00:49:44.363683" elapsed="0.031504"/>
 </kw>
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.254979" level="INFO">Element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Register')]' exists but is not displayed.</msg>
+<msg time="2024-07-12T00:49:44.409196" level="INFO">Element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Register')]' exists but is not displayed.</msg>
 <arg>locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.241479" elapsed="0.013500"/>
+<status status="PASS" start="2024-07-12T00:49:44.395688" elapsed="0.014008"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:04.207477" elapsed="0.047502"/>
+<status status="PASS" start="2024-07-12T00:49:44.363184" elapsed="0.046512"/>
 </iter>
 <iter>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.255977" level="INFO">Login</msg>
+<msg time="2024-07-12T00:49:44.410697" level="INFO">Login</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.255479" elapsed="0.000498"/>
+<status status="PASS" start="2024-07-12T00:49:44.410196" elapsed="0.000501"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.256478" level="INFO">Clicking element '//label[@for="1"]'.</msg>
+<msg time="2024-07-12T00:49:44.411697" level="INFO">Clicking element '//label[@for="1"]'.</msg>
 <arg>locator=//label[@for="1"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.256478" elapsed="0.019999"/>
+<status status="PASS" start="2024-07-12T00:49:44.411196" elapsed="0.020001"/>
 </kw>
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.287479" level="INFO">Element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Login')]' exists but is not displayed.</msg>
+<msg time="2024-07-12T00:49:44.443696" level="INFO">Element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Login')]' exists but is not displayed.</msg>
 <arg>locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.276477" elapsed="0.011002"/>
+<status status="PASS" start="2024-07-12T00:49:44.431197" elapsed="0.013000"/>
 </kw>
 <var name="${taskName}">Login</var>
-<status status="PASS" start="2024-07-12T00:26:04.254979" elapsed="0.032998"/>
+<status status="PASS" start="2024-07-12T00:49:44.410196" elapsed="0.034001"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedDoneList}</value>
-<status status="PASS" start="2024-07-12T00:26:04.207477" elapsed="0.080500"/>
+<status status="PASS" start="2024-07-12T00:49:44.363184" elapsed="0.081013"/>
 </for>
 <arg>expectedDoneList=${expectedDoneList}</arg>
 <doc>Verify task added on TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:04.206977" elapsed="0.081000"/>
+<status status="PASS" start="2024-07-12T00:49:44.362684" elapsed="0.081513"/>
 </kw>
 <kw name="Verify Completed" owner="TodoListTestStep">
 <kw name="Switch Tab" owner="TodoListTestStep">
@@ -308,131 +308,131 @@
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#add-item"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:04.288981" elapsed="0.000501"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.445697" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:04.288981" elapsed="0.000501"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.445697" elapsed="0.000000"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='TO_DO_TASKS'">
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:04.289482" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.446197" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:04.289482" elapsed="0.000499"/>
+<status status="NOT RUN" start="2024-07-12T00:49:44.445697" elapsed="0.000500"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='COMPLETED'">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.289981" level="INFO">Clicking element '//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
+<msg time="2024-07-12T00:49:44.446697" level="INFO">Clicking element '//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
 <arg>//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.289981" elapsed="0.025011"/>
+<status status="PASS" start="2024-07-12T00:49:44.446697" elapsed="0.023999"/>
 </kw>
-<status status="PASS" start="2024-07-12T00:26:04.289981" elapsed="0.025011"/>
+<status status="PASS" start="2024-07-12T00:49:44.446197" elapsed="0.024499"/>
 </branch>
-<status status="PASS" start="2024-07-12T00:26:04.288981" elapsed="0.026011"/>
+<status status="PASS" start="2024-07-12T00:49:44.445697" elapsed="0.024999"/>
 </if>
 <arg>Name=COMPLETED</arg>
 <doc>-  ADD ITEM Tab      -&gt; Switch Tab    Name=ADD_ITEM
 -  TO DO TASKS  Tab  -&gt; Switch Tab    Name=TO_DO_TASKS
 -  TO COMPLETED Tab  -&gt; Switch Tab    Name=COMPLETED</doc>
-<status status="PASS" start="2024-07-12T00:26:04.288981" elapsed="0.026011"/>
+<status status="PASS" start="2024-07-12T00:49:44.445197" elapsed="0.025499"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.315491" level="INFO">${index} = 0</msg>
+<msg time="2024-07-12T00:49:44.471196" level="INFO">${index} = 0</msg>
 <var>${index}</var>
 <arg>0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.315491" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:44.471196" elapsed="0.000000"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.316491" level="INFO">${index} = 1</msg>
+<msg time="2024-07-12T00:49:44.472196" level="INFO">${index} = 1</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.316491" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:44.472196" elapsed="0.000500"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.316991" level="INFO">Register</msg>
+<msg time="2024-07-12T00:49:44.472696" level="INFO">Register</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.316991" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:44.472696" elapsed="0.000501"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.317491" level="INFO">Verifying element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Register')]' contains exact text 'doneRegister'.</msg>
+<msg time="2024-07-12T00:49:44.473698" level="INFO">Verifying element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Register')]' contains exact text 'doneRegister'.</msg>
 <arg>locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]</arg>
 <arg>expected=done${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.316991" elapsed="0.010000"/>
+<status status="PASS" start="2024-07-12T00:49:44.473197" elapsed="0.011002"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:04.315991" elapsed="0.011000"/>
+<status status="PASS" start="2024-07-12T00:49:44.471696" elapsed="0.012503"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.327491" level="INFO">${index} = 2</msg>
+<msg time="2024-07-12T00:49:44.484699" level="INFO">${index} = 2</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.327491" elapsed="0.000499"/>
+<status status="PASS" start="2024-07-12T00:49:44.484699" elapsed="0.000500"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:04.327990" level="INFO">Login</msg>
+<msg time="2024-07-12T00:49:44.485700" level="INFO">Login</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.327990" elapsed="0.000501"/>
+<status status="PASS" start="2024-07-12T00:49:44.485199" elapsed="0.000501"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:04.328491" level="INFO">Verifying element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Login')]' contains exact text 'doneLogin'.</msg>
+<msg time="2024-07-12T00:49:44.486200" level="INFO">Verifying element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Login')]' contains exact text 'doneLogin'.</msg>
 <arg>locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]</arg>
 <arg>expected=done${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.328491" elapsed="0.009001"/>
+<status status="PASS" start="2024-07-12T00:49:44.485700" elapsed="0.010499"/>
 </kw>
 <var name="${taskName}">Login</var>
-<status status="PASS" start="2024-07-12T00:26:04.326991" elapsed="0.010501"/>
+<status status="PASS" start="2024-07-12T00:49:44.484199" elapsed="0.012000"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedDoneList}</value>
-<status status="PASS" start="2024-07-12T00:26:04.315991" elapsed="0.021501"/>
+<status status="PASS" start="2024-07-12T00:49:44.471696" elapsed="0.024503"/>
 </for>
 <arg>expectedDoneList=${expectedDoneList}</arg>
 <doc>Verify Completed List from To Done List</doc>
-<status status="PASS" start="2024-07-12T00:26:04.288478" elapsed="0.049014"/>
+<status status="PASS" start="2024-07-12T00:49:44.444696" elapsed="0.051503"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-12T00:26:04.337990" elapsed="2.115186"/>
+<status status="PASS" start="2024-07-12T00:49:44.497203" elapsed="2.125414"/>
 </kw>
 <doc>Customer create 2 tasks, 2 tasks completed</doc>
-<status status="PASS" start="2024-07-12T00:26:02.151785" elapsed="4.301891"/>
+<status status="PASS" start="2024-07-12T00:49:41.950659" elapsed="4.672459"/>
 </test>
 <test id="s1-s1-s1-t2" name="TC_Create_2_Tasks_Delete_TASK1_Success" line="30">
 <kw name="Open Web Browser" owner="TodoListTestStep" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:06.457175" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<msg time="2024-07-12T00:49:46.626118" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
 <arg>url=${URL}</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-12T00:26:06.456675" elapsed="1.646908"/>
+<status status="PASS" start="2024-07-12T00:49:46.625618" elapsed="1.668154"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.103583" elapsed="0.027508"/>
+<status status="PASS" start="2024-07-12T00:49:48.294272" elapsed="0.017013"/>
 </kw>
 <arg>${URL_WEB_TESTING}</arg>
 <doc>Open Browser following URL</doc>
-<status status="PASS" start="2024-07-12T00:26:06.456175" elapsed="1.674916"/>
+<status status="PASS" start="2024-07-12T00:49:46.625618" elapsed="1.685667"/>
 </kw>
 <variable name="@{expectedList}">
 <var>${TASK1}</var>
 <var>${TASK2}</var>
-<status status="PASS" start="2024-07-12T00:26:08.131091" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:48.311785" elapsed="0.000000"/>
 </variable>
 <variable name="@{expectedDoneList}">
 <var>${TASK2}</var>
-<status status="PASS" start="2024-07-12T00:26:08.131591" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:48.311785" elapsed="0.000500"/>
 </variable>
 <kw name="Create Item" owner="TodoListTestStep">
 <for flavor="IN">
@@ -441,80 +441,80 @@
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//input[@id="new-task"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.132590" elapsed="0.015000"/>
+<status status="PASS" start="2024-07-12T00:49:48.313285" elapsed="0.020502"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.148090" level="INFO">Typing text 'Register' into text field '//input[@id="new-task"]'.</msg>
+<msg time="2024-07-12T00:49:48.334285" level="INFO">Typing text 'Register' into text field '//input[@id="new-task"]'.</msg>
 <arg>locator=//input[@id="new-task"]</arg>
 <arg>text=${Name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.148090" elapsed="0.058517"/>
+<status status="PASS" start="2024-07-12T00:49:48.333787" elapsed="0.058002"/>
 </kw>
 <arg>${taskName}</arg>
 <doc>Input to textfield 'ItemName'</doc>
-<status status="PASS" start="2024-07-12T00:26:08.132590" elapsed="0.074017"/>
+<status status="PASS" start="2024-07-12T00:49:48.312786" elapsed="0.079003"/>
 </kw>
 <kw name="Click Button Create Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.207106" elapsed="0.013500"/>
+<status status="PASS" start="2024-07-12T00:49:48.392289" elapsed="0.012008"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.221106" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
+<msg time="2024-07-12T00:49:48.404797" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.220606" elapsed="0.029000"/>
+<status status="PASS" start="2024-07-12T00:49:48.404297" elapsed="0.029000"/>
 </kw>
 <doc>Click Button for Add item to 'To Do List'</doc>
-<status status="PASS" start="2024-07-12T00:26:08.207106" elapsed="0.042500"/>
+<status status="PASS" start="2024-07-12T00:49:48.391789" elapsed="0.041508"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:08.132590" elapsed="0.117515"/>
+<status status="PASS" start="2024-07-12T00:49:48.312786" elapsed="0.120511"/>
 </iter>
 <iter>
 <kw name="Input ItemName" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//input[@id="new-task"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.250605" elapsed="0.010499"/>
+<status status="PASS" start="2024-07-12T00:49:48.434297" elapsed="0.009500"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.261605" level="INFO">Typing text 'Login' into text field '//input[@id="new-task"]'.</msg>
+<msg time="2024-07-12T00:49:48.444297" level="INFO">Typing text 'Login' into text field '//input[@id="new-task"]'.</msg>
 <arg>locator=//input[@id="new-task"]</arg>
 <arg>text=${Name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.261104" elapsed="0.044004"/>
+<status status="PASS" start="2024-07-12T00:49:48.443797" elapsed="0.042004"/>
 </kw>
 <arg>${taskName}</arg>
 <doc>Input to textfield 'ItemName'</doc>
-<status status="PASS" start="2024-07-12T00:26:08.250105" elapsed="0.055003"/>
+<status status="PASS" start="2024-07-12T00:49:48.433797" elapsed="0.052504"/>
 </kw>
 <kw name="Click Button Create Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.305108" elapsed="0.010008"/>
+<status status="PASS" start="2024-07-12T00:49:48.486301" elapsed="0.011000"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.315116" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
+<msg time="2024-07-12T00:49:48.497801" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.315116" elapsed="0.024001"/>
+<status status="PASS" start="2024-07-12T00:49:48.497801" elapsed="0.039010"/>
 </kw>
 <doc>Click Button for Add item to 'To Do List'</doc>
-<status status="PASS" start="2024-07-12T00:26:08.305108" elapsed="0.034009"/>
+<status status="PASS" start="2024-07-12T00:49:48.486301" elapsed="0.050510"/>
 </kw>
 <var name="${taskName}">Login</var>
-<status status="PASS" start="2024-07-12T00:26:08.250105" elapsed="0.089012"/>
+<status status="PASS" start="2024-07-12T00:49:48.433797" elapsed="0.103014"/>
 </iter>
 <var>${taskName}</var>
 <value>@{itemList}</value>
-<status status="PASS" start="2024-07-12T00:26:08.132090" elapsed="0.207526"/>
+<status status="PASS" start="2024-07-12T00:49:48.312786" elapsed="0.224025"/>
 </for>
 <arg>itemList=${expectedList}</arg>
 <doc>Add task to TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:08.132090" elapsed="0.207526"/>
+<status status="PASS" start="2024-07-12T00:49:48.312285" elapsed="0.224526"/>
 </kw>
 <kw name="Verify ToDoTask" owner="TodoListTestStep">
 <kw name="Switch Tab" owner="TodoListTestStep">
@@ -523,113 +523,113 @@
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#add-item"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:08.340616" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.538309" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:08.340116" elapsed="0.000500"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.537809" elapsed="0.000500"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='TO_DO_TASKS'">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.341116" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
+<msg time="2024-07-12T00:49:48.538809" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
 <arg>//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.340616" elapsed="0.023000"/>
+<status status="PASS" start="2024-07-12T00:49:48.538309" elapsed="0.025500"/>
 </kw>
-<status status="PASS" start="2024-07-12T00:26:08.340616" elapsed="0.023500"/>
+<status status="PASS" start="2024-07-12T00:49:48.538309" elapsed="0.025500"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='COMPLETED'">
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:08.364116" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.564309" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:08.364116" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.563809" elapsed="0.000500"/>
 </branch>
-<status status="PASS" start="2024-07-12T00:26:08.340116" elapsed="0.024000"/>
+<status status="PASS" start="2024-07-12T00:49:48.537809" elapsed="0.026500"/>
 </if>
 <arg>Name=TO_DO_TASKS</arg>
 <doc>-  ADD ITEM Tab      -&gt; Switch Tab    Name=ADD_ITEM
 -  TO DO TASKS  Tab  -&gt; Switch Tab    Name=TO_DO_TASKS
 -  TO COMPLETED Tab  -&gt; Switch Tab    Name=COMPLETED</doc>
-<status status="PASS" start="2024-07-12T00:26:08.340116" elapsed="0.024000"/>
+<status status="PASS" start="2024-07-12T00:49:48.537809" elapsed="0.026500"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.364616" level="INFO">${index} = 0</msg>
+<msg time="2024-07-12T00:49:48.564809" level="INFO">${index} = 0</msg>
 <var>${index}</var>
 <arg>0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.364616" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:48.564309" elapsed="0.000500"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.365616" level="INFO">${index} = 1</msg>
+<msg time="2024-07-12T00:49:48.565809" level="INFO">${index} = 1</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.365116" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:48.565309" elapsed="0.000500"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.366116" level="INFO">Register</msg>
+<msg time="2024-07-12T00:49:48.566309" level="INFO">Register</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.365616" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:48.565809" elapsed="0.000500"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.366616" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Register')]' contains exact text 'Register'.</msg>
+<msg time="2024-07-12T00:49:48.566809" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Register')]' contains exact text 'Register'.</msg>
 <arg>locator=//input[@id="${index}"]/..//span[contains(text(),'${taskName}')]</arg>
 <arg>expected=${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.366116" elapsed="0.014000"/>
+<status status="PASS" start="2024-07-12T00:49:48.566309" elapsed="0.014500"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:08.365116" elapsed="0.015500"/>
+<status status="PASS" start="2024-07-12T00:49:48.565309" elapsed="0.015500"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.381116" level="INFO">${index} = 2</msg>
+<msg time="2024-07-12T00:49:48.581309" level="INFO">${index} = 2</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.380616" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:48.580809" elapsed="0.000500"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.381616" level="INFO">Login</msg>
+<msg time="2024-07-12T00:49:48.581809" level="INFO">Login</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.381116" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:48.581309" elapsed="0.000500"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.382116" level="INFO">Verifying element '//input[@id="2"]/..//span[contains(text(),'Login')]' contains exact text 'Login'.</msg>
+<msg time="2024-07-12T00:49:48.582309" level="INFO">Verifying element '//input[@id="2"]/..//span[contains(text(),'Login')]' contains exact text 'Login'.</msg>
 <arg>locator=//input[@id="${index}"]/..//span[contains(text(),'${taskName}')]</arg>
 <arg>expected=${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.382116" elapsed="0.011005"/>
+<status status="PASS" start="2024-07-12T00:49:48.582309" elapsed="0.011504"/>
 </kw>
 <var name="${taskName}">Login</var>
-<status status="PASS" start="2024-07-12T00:26:08.380616" elapsed="0.012505"/>
+<status status="PASS" start="2024-07-12T00:49:48.580809" elapsed="0.013504"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedList}</value>
-<status status="PASS" start="2024-07-12T00:26:08.365116" elapsed="0.028005"/>
+<status status="PASS" start="2024-07-12T00:49:48.564809" elapsed="0.029504"/>
 </for>
 <arg>expectedList=${expectedList}</arg>
 <doc>Verify task added on TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:08.339616" elapsed="0.054004"/>
+<status status="PASS" start="2024-07-12T00:49:48.537310" elapsed="0.057003"/>
 </kw>
 <kw name="Click Button Delete Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@id="${index}"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.394120" elapsed="0.011000"/>
+<status status="PASS" start="2024-07-12T00:49:48.594813" elapsed="0.011009"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.406124" level="INFO">Clicking button '//button[@id="1"]'.</msg>
+<msg time="2024-07-12T00:49:48.606321" level="INFO">Clicking button '//button[@id="1"]'.</msg>
 <arg>locator=//button[@id="${index}"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.405120" elapsed="0.036012"/>
+<status status="PASS" start="2024-07-12T00:49:48.605822" elapsed="0.035001"/>
 </kw>
 <doc>Click Button for Delete Item</doc>
-<status status="PASS" start="2024-07-12T00:26:08.393620" elapsed="0.048011"/>
+<status status="PASS" start="2024-07-12T00:49:48.594313" elapsed="0.046510"/>
 </kw>
 <kw name="Verify ToDoTask" owner="TodoListTestStep">
 <kw name="Switch Tab" owner="TodoListTestStep">
@@ -638,106 +638,106 @@
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#add-item"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:08.443131" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.642824" elapsed="0.000499"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:08.443131" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.642824" elapsed="0.000499"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='TO_DO_TASKS'">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.443631" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
+<msg time="2024-07-12T00:49:48.643823" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
 <arg>//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.443631" elapsed="0.019998"/>
+<status status="PASS" start="2024-07-12T00:49:48.643323" elapsed="0.023499"/>
 </kw>
-<status status="PASS" start="2024-07-12T00:26:08.443131" elapsed="0.020498"/>
+<status status="PASS" start="2024-07-12T00:49:48.643323" elapsed="0.024000"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='COMPLETED'">
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:08.464129" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.667323" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:08.463629" elapsed="0.000500"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.667323" elapsed="0.000499"/>
 </branch>
-<status status="PASS" start="2024-07-12T00:26:08.443131" elapsed="0.020998"/>
+<status status="PASS" start="2024-07-12T00:49:48.642824" elapsed="0.024998"/>
 </if>
 <arg>Name=TO_DO_TASKS</arg>
 <doc>-  ADD ITEM Tab      -&gt; Switch Tab    Name=ADD_ITEM
 -  TO DO TASKS  Tab  -&gt; Switch Tab    Name=TO_DO_TASKS
 -  TO COMPLETED Tab  -&gt; Switch Tab    Name=COMPLETED</doc>
-<status status="PASS" start="2024-07-12T00:26:08.442631" elapsed="0.021498"/>
+<status status="PASS" start="2024-07-12T00:49:48.642322" elapsed="0.025500"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.464629" level="INFO">${index} = 0</msg>
+<msg time="2024-07-12T00:49:48.667822" level="INFO">${index} = 0</msg>
 <var>${index}</var>
 <arg>0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.464629" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:48.667822" elapsed="0.000500"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.465629" level="INFO">${index} = 1</msg>
+<msg time="2024-07-12T00:49:48.668822" level="INFO">${index} = 1</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.465128" elapsed="0.000501"/>
+<status status="PASS" start="2024-07-12T00:49:48.668822" elapsed="0.000500"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.466129" level="INFO">Login</msg>
+<msg time="2024-07-12T00:49:48.669322" level="INFO">Login</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.465629" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:48.669322" elapsed="0.000500"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.466630" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Login')]' contains exact text 'Login'.</msg>
+<msg time="2024-07-12T00:49:48.670323" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Login')]' contains exact text 'Login'.</msg>
 <arg>locator=//input[@id="${index}"]/..//span[contains(text(),'${taskName}')]</arg>
 <arg>expected=${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.466129" elapsed="0.011499"/>
+<status status="PASS" start="2024-07-12T00:49:48.669822" elapsed="0.012037"/>
 </kw>
 <var name="${taskName}">Login</var>
-<status status="PASS" start="2024-07-12T00:26:08.465128" elapsed="0.012500"/>
+<status status="PASS" start="2024-07-12T00:49:48.668322" elapsed="0.014001"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedList}</value>
-<status status="PASS" start="2024-07-12T00:26:08.465128" elapsed="0.012500"/>
+<status status="PASS" start="2024-07-12T00:49:48.668322" elapsed="0.014001"/>
 </for>
 <arg>expectedList=${expectedDoneList}</arg>
 <doc>Verify task added on TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:08.442131" elapsed="0.035998"/>
+<status status="PASS" start="2024-07-12T00:49:48.641822" elapsed="0.040501"/>
 </kw>
 <kw name="To Done Task" owner="TodoListTestStep">
 <for flavor="IN">
 <iter>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.479128" level="INFO">Login</msg>
+<msg time="2024-07-12T00:49:48.683324" level="INFO">Login</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.479128" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:48.683324" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.479628" level="INFO">Clicking element '//label[@for="1"]'.</msg>
+<msg time="2024-07-12T00:49:48.683860" level="INFO">Clicking element '//label[@for="1"]'.</msg>
 <arg>locator=//label[@for="1"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.479628" elapsed="0.025507"/>
+<status status="PASS" start="2024-07-12T00:49:48.683324" elapsed="0.024519"/>
 </kw>
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.515149" level="INFO">Element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Login')]' exists but is not displayed.</msg>
+<msg time="2024-07-12T00:49:48.717842" level="INFO">Element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Login')]' exists but is not displayed.</msg>
 <arg>locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.505135" elapsed="0.010014"/>
+<status status="PASS" start="2024-07-12T00:49:48.707843" elapsed="0.010500"/>
 </kw>
 <var name="${taskName}">Login</var>
-<status status="PASS" start="2024-07-12T00:26:08.478628" elapsed="0.036521"/>
+<status status="PASS" start="2024-07-12T00:49:48.682822" elapsed="0.035521"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedDoneList}</value>
-<status status="PASS" start="2024-07-12T00:26:08.478628" elapsed="0.036521"/>
+<status status="PASS" start="2024-07-12T00:49:48.682822" elapsed="0.035521"/>
 </for>
 <arg>expectedDoneList=${expectedDoneList}</arg>
 <doc>Verify task added on TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:08.478129" elapsed="0.037520"/>
+<status status="PASS" start="2024-07-12T00:49:48.682822" elapsed="0.035521"/>
 </kw>
 <kw name="Verify Completed" owner="TodoListTestStep">
 <kw name="Switch Tab" owner="TodoListTestStep">
@@ -746,122 +746,122 @@
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#add-item"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:08.516649" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.719343" elapsed="0.000499"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:08.516649" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.719343" elapsed="0.000499"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='TO_DO_TASKS'">
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:08.517150" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.719842" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:08.516649" elapsed="0.000501"/>
+<status status="NOT RUN" start="2024-07-12T00:49:48.719842" elapsed="0.000000"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='COMPLETED'">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.517649" level="INFO">Clicking element '//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
+<msg time="2024-07-12T00:49:48.720343" level="INFO">Clicking element '//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
 <arg>//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.517150" elapsed="0.024499"/>
+<status status="PASS" start="2024-07-12T00:49:48.720343" elapsed="0.023000"/>
 </kw>
-<status status="PASS" start="2024-07-12T00:26:08.517150" elapsed="0.024999"/>
+<status status="PASS" start="2024-07-12T00:49:48.719842" elapsed="0.024001"/>
 </branch>
-<status status="PASS" start="2024-07-12T00:26:08.516649" elapsed="0.025500"/>
+<status status="PASS" start="2024-07-12T00:49:48.719343" elapsed="0.024500"/>
 </if>
 <arg>Name=COMPLETED</arg>
 <doc>-  ADD ITEM Tab      -&gt; Switch Tab    Name=ADD_ITEM
 -  TO DO TASKS  Tab  -&gt; Switch Tab    Name=TO_DO_TASKS
 -  TO COMPLETED Tab  -&gt; Switch Tab    Name=COMPLETED</doc>
-<status status="PASS" start="2024-07-12T00:26:08.516149" elapsed="0.026000"/>
+<status status="PASS" start="2024-07-12T00:49:48.719343" elapsed="0.024500"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.542149" level="INFO">${index} = 0</msg>
+<msg time="2024-07-12T00:49:48.744343" level="INFO">${index} = 0</msg>
 <var>${index}</var>
 <arg>0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.542149" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:48.743843" elapsed="0.000500"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.543149" level="INFO">${index} = 1</msg>
+<msg time="2024-07-12T00:49:48.744843" level="INFO">${index} = 1</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.543149" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:48.744843" elapsed="0.000500"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:08.543649" level="INFO">Login</msg>
+<msg time="2024-07-12T00:49:48.745343" level="INFO">Login</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.543649" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:48.745343" elapsed="0.000000"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.544149" level="INFO">Verifying element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Login')]' contains exact text 'doneLogin'.</msg>
+<msg time="2024-07-12T00:49:48.745843" level="INFO">Verifying element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Login')]' contains exact text 'doneLogin'.</msg>
 <arg>locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]</arg>
 <arg>expected=done${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.544149" elapsed="0.007500"/>
+<status status="PASS" start="2024-07-12T00:49:48.745843" elapsed="0.007499"/>
 </kw>
 <var name="${taskName}">Login</var>
-<status status="PASS" start="2024-07-12T00:26:08.542649" elapsed="0.009000"/>
+<status status="PASS" start="2024-07-12T00:49:48.744343" elapsed="0.008999"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedDoneList}</value>
-<status status="PASS" start="2024-07-12T00:26:08.542649" elapsed="0.009000"/>
+<status status="PASS" start="2024-07-12T00:49:48.744343" elapsed="0.008999"/>
 </for>
 <arg>expectedDoneList=${expectedDoneList}</arg>
 <doc>Verify Completed List from To Done List</doc>
-<status status="PASS" start="2024-07-12T00:26:08.515649" elapsed="0.036500"/>
+<status status="PASS" start="2024-07-12T00:49:48.718843" elapsed="0.034499"/>
 </kw>
 <kw name="Click Button Delete Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@id="${index}"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.553150" elapsed="0.010499"/>
+<status status="PASS" start="2024-07-12T00:49:48.753843" elapsed="0.010999"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:08.564149" level="INFO">Clicking button '//button[@id="1"]'.</msg>
+<msg time="2024-07-12T00:49:48.765343" level="INFO">Clicking button '//button[@id="1"]'.</msg>
 <arg>locator=//button[@id="${index}"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.563649" elapsed="0.027160"/>
+<status status="PASS" start="2024-07-12T00:49:48.764842" elapsed="0.027506"/>
 </kw>
 <doc>Click Button for Delete Item</doc>
-<status status="PASS" start="2024-07-12T00:26:08.552651" elapsed="0.038158"/>
+<status status="PASS" start="2024-07-12T00:49:48.753843" elapsed="0.038505"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-12T00:26:08.591312" elapsed="2.081533"/>
+<status status="PASS" start="2024-07-12T00:49:48.792850" elapsed="2.066827"/>
 </kw>
 <doc>Customer create 2 tasks, ToDoList: task 1 deleted., CompletedList: remain task deleted.</doc>
-<status status="PASS" start="2024-07-12T00:26:06.455676" elapsed="4.217675"/>
+<status status="PASS" start="2024-07-12T00:49:46.625118" elapsed="4.234559"/>
 </test>
 <test id="s1-s1-s1-t3" name="TC_Create_2_Tasks_Delete_TASK2_Success" line="46">
 <kw name="Open Web Browser" owner="TodoListTestStep" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:10.676851" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<msg time="2024-07-12T00:49:50.862178" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
 <arg>url=${URL}</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-12T00:26:10.676851" elapsed="1.719327"/>
+<status status="PASS" start="2024-07-12T00:49:50.862178" elapsed="1.653165"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.396178" elapsed="0.025842"/>
+<status status="PASS" start="2024-07-12T00:49:52.515343" elapsed="0.031001"/>
 </kw>
 <arg>${URL_WEB_TESTING}</arg>
 <doc>Open Browser following URL</doc>
-<status status="PASS" start="2024-07-12T00:26:10.676350" elapsed="1.745670"/>
+<status status="PASS" start="2024-07-12T00:49:50.861678" elapsed="1.685164"/>
 </kw>
 <variable name="@{expectedList}">
 <var>${TASK1}</var>
 <var>${TASK2}</var>
-<status status="PASS" start="2024-07-12T00:26:12.426519" elapsed="0.000502"/>
+<status status="PASS" start="2024-07-12T00:49:52.546842" elapsed="0.000503"/>
 </variable>
 <variable name="@{expectedDoneList}">
 <var>${TASK1}</var>
-<status status="PASS" start="2024-07-12T00:26:12.427021" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:52.547345" elapsed="0.000498"/>
 </variable>
 <kw name="Create Item" owner="TodoListTestStep">
 <for flavor="IN">
@@ -870,80 +870,80 @@
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//input[@id="new-task"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.428019" elapsed="0.015000"/>
+<status status="PASS" start="2024-07-12T00:49:52.548843" elapsed="0.016029"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.443519" level="INFO">Typing text 'Register' into text field '//input[@id="new-task"]'.</msg>
+<msg time="2024-07-12T00:49:52.565373" level="INFO">Typing text 'Register' into text field '//input[@id="new-task"]'.</msg>
 <arg>locator=//input[@id="new-task"]</arg>
 <arg>text=${Name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.443019" elapsed="0.057004"/>
+<status status="PASS" start="2024-07-12T00:49:52.564872" elapsed="0.062492"/>
 </kw>
 <arg>${taskName}</arg>
 <doc>Input to textfield 'ItemName'</doc>
-<status status="PASS" start="2024-07-12T00:26:12.428019" elapsed="0.072004"/>
+<status status="PASS" start="2024-07-12T00:49:52.548342" elapsed="0.079022"/>
 </kw>
 <kw name="Click Button Create Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.500523" elapsed="0.012505"/>
+<status status="PASS" start="2024-07-12T00:49:52.627862" elapsed="0.012502"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.513528" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
+<msg time="2024-07-12T00:49:52.640862" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.513028" elapsed="0.029000"/>
+<status status="PASS" start="2024-07-12T00:49:52.640364" elapsed="0.029496"/>
 </kw>
 <doc>Click Button for Add item to 'To Do List'</doc>
-<status status="PASS" start="2024-07-12T00:26:12.500523" elapsed="0.041505"/>
+<status status="PASS" start="2024-07-12T00:49:52.627862" elapsed="0.042499"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:12.427520" elapsed="0.115008"/>
+<status status="PASS" start="2024-07-12T00:49:52.548342" elapsed="0.122019"/>
 </iter>
 <iter>
 <kw name="Input ItemName" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//input[@id="new-task"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.543028" elapsed="0.008500"/>
+<status status="PASS" start="2024-07-12T00:49:52.670862" elapsed="0.009499"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.552029" level="INFO">Typing text 'Login' into text field '//input[@id="new-task"]'.</msg>
+<msg time="2024-07-12T00:49:52.680860" level="INFO">Typing text 'Login' into text field '//input[@id="new-task"]'.</msg>
 <arg>locator=//input[@id="new-task"]</arg>
 <arg>text=${Name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.551528" elapsed="0.040000"/>
+<status status="PASS" start="2024-07-12T00:49:52.680361" elapsed="0.041319"/>
 </kw>
 <arg>${taskName}</arg>
 <doc>Input to textfield 'ItemName'</doc>
-<status status="PASS" start="2024-07-12T00:26:12.542528" elapsed="0.049000"/>
+<status status="PASS" start="2024-07-12T00:49:52.670361" elapsed="0.051319"/>
 </kw>
 <kw name="Click Button Create Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.592030" elapsed="0.009502"/>
+<status status="PASS" start="2024-07-12T00:49:52.722181" elapsed="0.010500"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.602032" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
+<msg time="2024-07-12T00:49:52.732681" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.602032" elapsed="0.025006"/>
+<status status="PASS" start="2024-07-12T00:49:52.732681" elapsed="0.024001"/>
 </kw>
 <doc>Click Button for Add item to 'To Do List'</doc>
-<status status="PASS" start="2024-07-12T00:26:12.592030" elapsed="0.035008"/>
+<status status="PASS" start="2024-07-12T00:49:52.721680" elapsed="0.035501"/>
 </kw>
 <var name="${taskName}">Login</var>
-<status status="PASS" start="2024-07-12T00:26:12.542528" elapsed="0.084510"/>
+<status status="PASS" start="2024-07-12T00:49:52.670361" elapsed="0.086820"/>
 </iter>
 <var>${taskName}</var>
 <value>@{itemList}</value>
-<status status="PASS" start="2024-07-12T00:26:12.427520" elapsed="0.200019"/>
+<status status="PASS" start="2024-07-12T00:49:52.547843" elapsed="0.209338"/>
 </for>
 <arg>itemList=${expectedList}</arg>
 <doc>Add task to TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:12.427520" elapsed="0.200019"/>
+<status status="PASS" start="2024-07-12T00:49:52.547843" elapsed="0.209338"/>
 </kw>
 <kw name="Verify ToDoTask" owner="TodoListTestStep">
 <kw name="Switch Tab" owner="TodoListTestStep">
@@ -952,114 +952,114 @@
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#add-item"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:12.628538" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.758680" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:12.628538" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.758181" elapsed="0.000499"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='TO_DO_TASKS'">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.629037" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
+<msg time="2024-07-12T00:49:52.759180" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
 <arg>//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.629037" elapsed="0.021500"/>
+<status status="PASS" start="2024-07-12T00:49:52.759180" elapsed="0.024501"/>
 </kw>
-<status status="PASS" start="2024-07-12T00:26:12.629037" elapsed="0.022001"/>
+<status status="PASS" start="2024-07-12T00:49:52.758680" elapsed="0.025001"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='COMPLETED'">
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:12.651038" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.784181" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:12.651038" elapsed="0.000499"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.783681" elapsed="0.000500"/>
 </branch>
-<status status="PASS" start="2024-07-12T00:26:12.628538" elapsed="0.022999"/>
+<status status="PASS" start="2024-07-12T00:49:52.758181" elapsed="0.026000"/>
 </if>
 <arg>Name=TO_DO_TASKS</arg>
 <doc>-  ADD ITEM Tab      -&gt; Switch Tab    Name=ADD_ITEM
 -  TO DO TASKS  Tab  -&gt; Switch Tab    Name=TO_DO_TASKS
 -  TO COMPLETED Tab  -&gt; Switch Tab    Name=COMPLETED</doc>
-<status status="PASS" start="2024-07-12T00:26:12.628039" elapsed="0.023498"/>
+<status status="PASS" start="2024-07-12T00:49:52.758181" elapsed="0.026000"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.652038" level="INFO">${index} = 0</msg>
+<msg time="2024-07-12T00:49:52.784680" level="INFO">${index} = 0</msg>
 <var>${index}</var>
 <arg>0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.651537" elapsed="0.000501"/>
+<status status="PASS" start="2024-07-12T00:49:52.784680" elapsed="0.000000"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.653039" level="INFO">${index} = 1</msg>
+<msg time="2024-07-12T00:49:52.785680" level="INFO">${index} = 1</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.653039" elapsed="0.000499"/>
+<status status="PASS" start="2024-07-12T00:49:52.785180" elapsed="0.000500"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.654064" level="INFO">Register</msg>
+<msg time="2024-07-12T00:49:52.786181" level="INFO">Register</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.653538" elapsed="0.000526"/>
+<status status="PASS" start="2024-07-12T00:49:52.785680" elapsed="0.000501"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.654540" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Register')]' contains exact text 'Register'.</msg>
+<msg time="2024-07-12T00:49:52.786686" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Register')]' contains exact text 'Register'.</msg>
 <arg>locator=//input[@id="${index}"]/..//span[contains(text(),'${taskName}')]</arg>
 <arg>expected=${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.654064" elapsed="0.014975"/>
+<status status="PASS" start="2024-07-12T00:49:52.786181" elapsed="0.014504"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:12.652539" elapsed="0.016999"/>
+<status status="PASS" start="2024-07-12T00:49:52.785180" elapsed="0.015505"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.670538" level="INFO">${index} = 2</msg>
+<msg time="2024-07-12T00:49:52.800685" level="INFO">${index} = 2</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.670038" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:52.800685" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.671537" level="INFO">Login</msg>
+<msg time="2024-07-12T00:49:52.801689" level="INFO">Login</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.671037" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:52.800685" elapsed="0.001004"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.672037" level="INFO">Verifying element '//input[@id="2"]/..//span[contains(text(),'Login')]' contains exact text 'Login'.</msg>
+<msg time="2024-07-12T00:49:52.802193" level="INFO">Verifying element '//input[@id="2"]/..//span[contains(text(),'Login')]' contains exact text 'Login'.</msg>
 <arg>locator=//input[@id="${index}"]/..//span[contains(text(),'${taskName}')]</arg>
 <arg>expected=${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.671537" elapsed="0.010000"/>
+<status status="PASS" start="2024-07-12T00:49:52.801689" elapsed="0.012004"/>
 </kw>
 <var name="${taskName}">Login</var>
-<status status="PASS" start="2024-07-12T00:26:12.669538" elapsed="0.011999"/>
+<status status="PASS" start="2024-07-12T00:49:52.800685" elapsed="0.013008"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedList}</value>
-<status status="PASS" start="2024-07-12T00:26:12.652539" elapsed="0.028998"/>
+<status status="PASS" start="2024-07-12T00:49:52.785180" elapsed="0.028513"/>
 </for>
 <arg>expectedList=${expectedList}</arg>
 <doc>Verify task added on TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:12.627539" elapsed="0.054498"/>
+<status status="PASS" start="2024-07-12T00:49:52.757681" elapsed="0.056012"/>
 </kw>
 <kw name="Click Button Delete Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@id="${index}"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.682537" elapsed="0.011504"/>
+<status status="PASS" start="2024-07-12T00:49:52.814193" elapsed="0.011500"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.694541" level="INFO">Clicking button '//button[@id="2"]'.</msg>
+<msg time="2024-07-12T00:49:52.826193" level="INFO">Clicking button '//button[@id="2"]'.</msg>
 <arg>locator=//button[@id="${index}"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.694041" elapsed="0.032006"/>
+<status status="PASS" start="2024-07-12T00:49:52.825693" elapsed="0.027500"/>
 </kw>
 <arg>index=2</arg>
 <doc>Click Button for Delete Item</doc>
-<status status="PASS" start="2024-07-12T00:26:12.682037" elapsed="0.044010"/>
+<status status="PASS" start="2024-07-12T00:49:52.814193" elapsed="0.039500"/>
 </kw>
 <kw name="Verify ToDoTask" owner="TodoListTestStep">
 <kw name="Switch Tab" owner="TodoListTestStep">
@@ -1068,106 +1068,106 @@
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#add-item"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:12.727547" elapsed="0.000500"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.854694" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:12.727547" elapsed="0.000500"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.854694" elapsed="0.000000"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='TO_DO_TASKS'">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.728047" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
+<msg time="2024-07-12T00:49:52.855194" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
 <arg>//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.728047" elapsed="0.019500"/>
+<status status="PASS" start="2024-07-12T00:49:52.855194" elapsed="0.027001"/>
 </kw>
-<status status="PASS" start="2024-07-12T00:26:12.728047" elapsed="0.020000"/>
+<status status="PASS" start="2024-07-12T00:49:52.854694" elapsed="0.027501"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='COMPLETED'">
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:12.748047" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.882695" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:12.748047" elapsed="0.000500"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.882195" elapsed="0.000500"/>
 </branch>
-<status status="PASS" start="2024-07-12T00:26:12.727547" elapsed="0.021000"/>
+<status status="PASS" start="2024-07-12T00:49:52.854694" elapsed="0.028001"/>
 </if>
 <arg>Name=TO_DO_TASKS</arg>
 <doc>-  ADD ITEM Tab      -&gt; Switch Tab    Name=ADD_ITEM
 -  TO DO TASKS  Tab  -&gt; Switch Tab    Name=TO_DO_TASKS
 -  TO COMPLETED Tab  -&gt; Switch Tab    Name=COMPLETED</doc>
-<status status="PASS" start="2024-07-12T00:26:12.727547" elapsed="0.021000"/>
+<status status="PASS" start="2024-07-12T00:49:52.854193" elapsed="0.028502"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.748547" level="INFO">${index} = 0</msg>
+<msg time="2024-07-12T00:49:52.883194" level="INFO">${index} = 0</msg>
 <var>${index}</var>
 <arg>0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.748547" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:52.882695" elapsed="0.000499"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.749548" level="INFO">${index} = 1</msg>
+<msg time="2024-07-12T00:49:52.884197" level="INFO">${index} = 1</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.749548" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:52.883695" elapsed="0.000502"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.750047" level="INFO">Register</msg>
+<msg time="2024-07-12T00:49:52.884696" level="INFO">Register</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.749548" elapsed="0.000499"/>
+<status status="PASS" start="2024-07-12T00:49:52.884696" elapsed="0.000000"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.750548" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Register')]' contains exact text 'Register'.</msg>
+<msg time="2024-07-12T00:49:52.885196" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Register')]' contains exact text 'Register'.</msg>
 <arg>locator=//input[@id="${index}"]/..//span[contains(text(),'${taskName}')]</arg>
 <arg>expected=${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.750047" elapsed="0.009000"/>
+<status status="PASS" start="2024-07-12T00:49:52.884696" elapsed="0.013011"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:12.749047" elapsed="0.010501"/>
+<status status="PASS" start="2024-07-12T00:49:52.883695" elapsed="0.014012"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedList}</value>
-<status status="PASS" start="2024-07-12T00:26:12.749047" elapsed="0.010501"/>
+<status status="PASS" start="2024-07-12T00:49:52.883194" elapsed="0.014513"/>
 </for>
 <arg>expectedList=${expectedDoneList}</arg>
 <doc>Verify task added on TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:12.727047" elapsed="0.032501"/>
+<status status="PASS" start="2024-07-12T00:49:52.853693" elapsed="0.044014"/>
 </kw>
 <kw name="To Done Task" owner="TodoListTestStep">
 <for flavor="IN">
 <iter>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.783048" level="INFO">Register</msg>
+<msg time="2024-07-12T00:49:52.899708" level="INFO">Register</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.783048" elapsed="0.000499"/>
+<status status="PASS" start="2024-07-12T00:49:52.899205" elapsed="0.000503"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.784048" level="INFO">Clicking element '//label[@for="1"]'.</msg>
+<msg time="2024-07-12T00:49:52.900207" level="INFO">Clicking element '//label[@for="1"]'.</msg>
 <arg>locator=//label[@for="1"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.783547" elapsed="0.027013"/>
+<status status="PASS" start="2024-07-12T00:49:52.900207" elapsed="0.028011"/>
 </kw>
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.825059" level="INFO">Element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Register')]' exists but is not displayed.</msg>
+<msg time="2024-07-12T00:49:52.942718" level="INFO">Element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Register')]' exists but is not displayed.</msg>
 <arg>locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.811059" elapsed="0.014000"/>
+<status status="PASS" start="2024-07-12T00:49:52.928218" elapsed="0.015001"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:12.783048" elapsed="0.042011"/>
+<status status="PASS" start="2024-07-12T00:49:52.899205" elapsed="0.044014"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedDoneList}</value>
-<status status="PASS" start="2024-07-12T00:26:12.783048" elapsed="0.042011"/>
+<status status="PASS" start="2024-07-12T00:49:52.898709" elapsed="0.045009"/>
 </for>
 <arg>expectedDoneList=${expectedDoneList}</arg>
 <doc>Verify task added on TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:12.782548" elapsed="0.043012"/>
+<status status="PASS" start="2024-07-12T00:49:52.898208" elapsed="0.045510"/>
 </kw>
 <kw name="Verify Completed" owner="TodoListTestStep">
 <kw name="Switch Tab" owner="TodoListTestStep">
@@ -1176,102 +1176,102 @@
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#add-item"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:12.828059" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.945218" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:12.827560" elapsed="0.000499"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.945218" elapsed="0.000500"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='TO_DO_TASKS'">
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:12.828059" elapsed="0.000500"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.945718" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:12.828059" elapsed="0.000500"/>
+<status status="NOT RUN" start="2024-07-12T00:49:52.945718" elapsed="0.000000"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='COMPLETED'">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.829060" level="INFO">Clicking element '//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
+<msg time="2024-07-12T00:49:52.946218" level="INFO">Clicking element '//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
 <arg>//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.828559" elapsed="0.027501"/>
+<status status="PASS" start="2024-07-12T00:49:52.946218" elapsed="0.029000"/>
 </kw>
-<status status="PASS" start="2024-07-12T00:26:12.828559" elapsed="0.027501"/>
+<status status="PASS" start="2024-07-12T00:49:52.945718" elapsed="0.029500"/>
 </branch>
-<status status="PASS" start="2024-07-12T00:26:12.827560" elapsed="0.028500"/>
+<status status="PASS" start="2024-07-12T00:49:52.945218" elapsed="0.030000"/>
 </if>
 <arg>Name=COMPLETED</arg>
 <doc>-  ADD ITEM Tab      -&gt; Switch Tab    Name=ADD_ITEM
 -  TO DO TASKS  Tab  -&gt; Switch Tab    Name=TO_DO_TASKS
 -  TO COMPLETED Tab  -&gt; Switch Tab    Name=COMPLETED</doc>
-<status status="PASS" start="2024-07-12T00:26:12.827560" elapsed="0.028500"/>
+<status status="PASS" start="2024-07-12T00:49:52.944717" elapsed="0.030501"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.856559" level="INFO">${index} = 0</msg>
+<msg time="2024-07-12T00:49:52.975717" level="INFO">${index} = 0</msg>
 <var>${index}</var>
 <arg>0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.856559" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:52.975717" elapsed="0.000500"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.857559" level="INFO">${index} = 1</msg>
+<msg time="2024-07-12T00:49:52.976717" level="INFO">${index} = 1</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.857559" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:52.976717" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:12.858059" level="INFO">Register</msg>
+<msg time="2024-07-12T00:49:52.977218" level="INFO">Register</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.858059" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:52.977218" elapsed="0.000499"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:12.858559" level="INFO">Verifying element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Register')]' contains exact text 'doneRegister'.</msg>
+<msg time="2024-07-12T00:49:52.977717" level="INFO">Verifying element '//span[@class='mdl-list__item-primary-content' and contains(text(), 'Register')]' contains exact text 'doneRegister'.</msg>
 <arg>locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]</arg>
 <arg>expected=done${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.858059" elapsed="0.008000"/>
+<status status="PASS" start="2024-07-12T00:49:52.977717" elapsed="0.008000"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:12.857059" elapsed="0.009000"/>
+<status status="PASS" start="2024-07-12T00:49:52.976217" elapsed="0.009500"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedDoneList}</value>
-<status status="PASS" start="2024-07-12T00:26:12.857059" elapsed="0.009500"/>
+<status status="PASS" start="2024-07-12T00:49:52.976217" elapsed="0.009500"/>
 </for>
 <arg>expectedDoneList=${expectedDoneList}</arg>
 <doc>Verify Completed List from To Done List</doc>
-<status status="PASS" start="2024-07-12T00:26:12.827060" elapsed="0.039499"/>
+<status status="PASS" start="2024-07-12T00:49:52.944218" elapsed="0.041499"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-12T00:26:12.866559" elapsed="2.083197"/>
+<status status="PASS" start="2024-07-12T00:49:52.986217" elapsed="2.075458"/>
 </kw>
 <doc>Customer create 2 tasks, ToDoList: task 2 deleted.</doc>
-<status status="PASS" start="2024-07-12T00:26:10.675851" elapsed="4.273905"/>
+<status status="PASS" start="2024-07-12T00:49:50.861178" elapsed="4.200997"/>
 </test>
 <test id="s1-s1-s1-t4" name="TC_Create_1_Tasks_Delete_1_Task_Success" line="60">
 <kw name="Open Web Browser" owner="TodoListTestStep" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:14.951757" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<msg time="2024-07-12T00:49:55.064675" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
 <arg>url=${URL}</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-12T00:26:14.951757" elapsed="1.604356"/>
+<status status="PASS" start="2024-07-12T00:49:55.064176" elapsed="1.622710"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.556113" elapsed="0.023500"/>
+<status status="PASS" start="2024-07-12T00:49:56.686886" elapsed="0.032012"/>
 </kw>
 <arg>${URL_WEB_TESTING}</arg>
 <doc>Open Browser following URL</doc>
-<status status="PASS" start="2024-07-12T00:26:14.951258" elapsed="1.628854"/>
+<status status="PASS" start="2024-07-12T00:49:55.064176" elapsed="1.655222"/>
 </kw>
 <variable name="@{expectedList}">
 <var>${TASK1}</var>
-<status status="PASS" start="2024-07-12T00:26:16.580112" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:56.719398" elapsed="0.000500"/>
 </variable>
 <kw name="Create Item" owner="TodoListTestStep">
 <for flavor="IN">
@@ -1280,44 +1280,44 @@
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//input[@id="new-task"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.582113" elapsed="0.015504"/>
+<status status="PASS" start="2024-07-12T00:49:56.720899" elapsed="0.016499"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:16.598117" level="INFO">Typing text 'Register' into text field '//input[@id="new-task"]'.</msg>
+<msg time="2024-07-12T00:49:56.737898" level="INFO">Typing text 'Register' into text field '//input[@id="new-task"]'.</msg>
 <arg>locator=//input[@id="new-task"]</arg>
 <arg>text=${Name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.597617" elapsed="0.059518"/>
+<status status="PASS" start="2024-07-12T00:49:56.737398" elapsed="0.055223"/>
 </kw>
 <arg>${taskName}</arg>
 <doc>Input to textfield 'ItemName'</doc>
-<status status="PASS" start="2024-07-12T00:26:16.582113" elapsed="0.075022"/>
+<status status="PASS" start="2024-07-12T00:49:56.720899" elapsed="0.071722"/>
 </kw>
 <kw name="Click Button Create Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.657627" elapsed="0.012500"/>
+<status status="PASS" start="2024-07-12T00:49:56.793121" elapsed="0.011502"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:16.670627" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
+<msg time="2024-07-12T00:49:56.804623" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.670627" elapsed="0.028506"/>
+<status status="PASS" start="2024-07-12T00:49:56.804623" elapsed="0.029003"/>
 </kw>
 <doc>Click Button for Add item to 'To Do List'</doc>
-<status status="PASS" start="2024-07-12T00:26:16.657135" elapsed="0.041998"/>
+<status status="PASS" start="2024-07-12T00:49:56.792621" elapsed="0.041005"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:16.582113" elapsed="0.117020"/>
+<status status="PASS" start="2024-07-12T00:49:56.720899" elapsed="0.112727"/>
 </iter>
 <var>${taskName}</var>
 <value>@{itemList}</value>
-<status status="PASS" start="2024-07-12T00:26:16.581112" elapsed="0.118021"/>
+<status status="PASS" start="2024-07-12T00:49:56.720399" elapsed="0.113227"/>
 </for>
 <arg>itemList=${expectedList}</arg>
 <doc>Add task to TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:16.580613" elapsed="0.118520"/>
+<status status="PASS" start="2024-07-12T00:49:56.720399" elapsed="0.113227"/>
 </kw>
 <kw name="Verify ToDoTask" owner="TodoListTestStep">
 <kw name="Switch Tab" owner="TodoListTestStep">
@@ -1326,286 +1326,286 @@
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#add-item"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:16.700133" elapsed="0.000500"/>
+<status status="NOT RUN" start="2024-07-12T00:49:56.834626" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:16.700133" elapsed="0.000500"/>
+<status status="NOT RUN" start="2024-07-12T00:49:56.834626" elapsed="0.000499"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='TO_DO_TASKS'">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:16.700633" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
+<msg time="2024-07-12T00:49:56.835125" level="INFO">Clicking element '//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]'.</msg>
 <arg>//a[@href="#todo"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.700633" elapsed="0.025012"/>
+<status status="PASS" start="2024-07-12T00:49:56.835125" elapsed="0.027002"/>
 </kw>
-<status status="PASS" start="2024-07-12T00:26:16.700633" elapsed="0.025012"/>
+<status status="PASS" start="2024-07-12T00:49:56.835125" elapsed="0.027002"/>
 </branch>
 <branch type="ELSE IF" condition="'${Name}'=='COMPLETED'">
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>//a[@href="#completed"]//span[@data-upgraded=",MaterialRipple"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-07-12T00:26:16.726145" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-12T00:49:56.862626" elapsed="0.000000"/>
 </kw>
-<status status="NOT RUN" start="2024-07-12T00:26:16.725645" elapsed="0.000500"/>
+<status status="NOT RUN" start="2024-07-12T00:49:56.862127" elapsed="0.000499"/>
 </branch>
-<status status="PASS" start="2024-07-12T00:26:16.700133" elapsed="0.026012"/>
+<status status="PASS" start="2024-07-12T00:49:56.834626" elapsed="0.028000"/>
 </if>
 <arg>Name=TO_DO_TASKS</arg>
 <doc>-  ADD ITEM Tab      -&gt; Switch Tab    Name=ADD_ITEM
 -  TO DO TASKS  Tab  -&gt; Switch Tab    Name=TO_DO_TASKS
 -  TO COMPLETED Tab  -&gt; Switch Tab    Name=COMPLETED</doc>
-<status status="PASS" start="2024-07-12T00:26:16.700133" elapsed="0.026012"/>
+<status status="PASS" start="2024-07-12T00:49:56.834626" elapsed="0.028000"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:16.726644" level="INFO">${index} = 0</msg>
+<msg time="2024-07-12T00:49:56.863125" level="INFO">${index} = 0</msg>
 <var>${index}</var>
 <arg>0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.726145" elapsed="0.000499"/>
+<status status="PASS" start="2024-07-12T00:49:56.862626" elapsed="0.000499"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-07-12T00:26:16.727144" level="INFO">${index} = 1</msg>
+<msg time="2024-07-12T00:49:56.863626" level="INFO">${index} = 1</msg>
 <var>${index}</var>
 <arg>${index} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.727144" elapsed="0.000500"/>
+<status status="PASS" start="2024-07-12T00:49:56.863626" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-12T00:26:16.727644" level="INFO">Register</msg>
+<msg time="2024-07-12T00:49:56.864127" level="INFO">Register</msg>
 <arg>${taskName}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.727644" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-12T00:49:56.864127" elapsed="0.000500"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:16.728144" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Register')]' contains exact text 'Register'.</msg>
+<msg time="2024-07-12T00:49:56.864627" level="INFO">Verifying element '//input[@id="1"]/..//span[contains(text(),'Register')]' contains exact text 'Register'.</msg>
 <arg>locator=//input[@id="${index}"]/..//span[contains(text(),'${taskName}')]</arg>
 <arg>expected=${taskName}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.728144" elapsed="0.015000"/>
+<status status="PASS" start="2024-07-12T00:49:56.864627" elapsed="0.013499"/>
 </kw>
 <var name="${taskName}">Register</var>
-<status status="PASS" start="2024-07-12T00:26:16.727144" elapsed="0.016500"/>
+<status status="PASS" start="2024-07-12T00:49:56.863125" elapsed="0.015001"/>
 </iter>
 <var>${taskName}</var>
 <value>@{expectedList}</value>
-<status status="PASS" start="2024-07-12T00:26:16.726644" elapsed="0.017000"/>
+<status status="PASS" start="2024-07-12T00:49:56.863125" elapsed="0.015001"/>
 </for>
 <arg>expectedList=${expectedList}</arg>
 <doc>Verify task added on TO DO LIST</doc>
-<status status="PASS" start="2024-07-12T00:26:16.699633" elapsed="0.044011"/>
+<status status="PASS" start="2024-07-12T00:49:56.834126" elapsed="0.044000"/>
 </kw>
 <kw name="Click Button Delete Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@id="${index}"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.744646" elapsed="0.012499"/>
+<status status="PASS" start="2024-07-12T00:49:56.879126" elapsed="0.014003"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:16.757645" level="INFO">Clicking button '//button[@id="1"]'.</msg>
+<msg time="2024-07-12T00:49:56.894129" level="INFO">Clicking button '//button[@id="1"]'.</msg>
 <arg>locator=//button[@id="${index}"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.757145" elapsed="0.030156"/>
+<status status="PASS" start="2024-07-12T00:49:56.893629" elapsed="0.034507"/>
 </kw>
 <doc>Click Button for Delete Item</doc>
-<status status="PASS" start="2024-07-12T00:26:16.744145" elapsed="0.043655"/>
+<status status="PASS" start="2024-07-12T00:49:56.878626" elapsed="0.049510"/>
 </kw>
 <kw name="Verify Empty List ToDoTask Tab" owner="TodoListTestStep">
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:16.794301" level="INFO">Element '//ul[@id="incomplete-tasks"]//li' did not exist.</msg>
+<msg time="2024-07-12T00:49:56.935636" level="INFO">Element '//ul[@id="incomplete-tasks"]//li' did not exist.</msg>
 <arg>//ul[@id="incomplete-tasks"]//li</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.788302" elapsed="0.005999"/>
+<status status="PASS" start="2024-07-12T00:49:56.929136" elapsed="0.006500"/>
 </kw>
 <doc>Verify Empty List ToDoTask</doc>
-<status status="PASS" start="2024-07-12T00:26:16.787800" elapsed="0.006501"/>
+<status status="PASS" start="2024-07-12T00:49:56.928635" elapsed="0.007001"/>
 </kw>
 <kw name="Verify Empty List Completed Tab" owner="TodoListTestStep">
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:16.801304" level="INFO">Element '//li[@class="mdl-list"]' did not exist.</msg>
+<msg time="2024-07-12T00:49:56.943635" level="INFO">Element '//li[@class="mdl-list"]' did not exist.</msg>
 <arg>//li[@class="mdl-list"]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.795305" elapsed="0.005999"/>
+<status status="PASS" start="2024-07-12T00:49:56.936636" elapsed="0.006999"/>
 </kw>
 <doc>Verify Empty List on Completed Tab</doc>
-<status status="PASS" start="2024-07-12T00:26:16.794800" elapsed="0.006504"/>
+<status status="PASS" start="2024-07-12T00:49:56.936136" elapsed="0.007499"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-12T00:26:16.801805" elapsed="2.073525"/>
+<status status="PASS" start="2024-07-12T00:49:56.944135" elapsed="2.089160"/>
 </kw>
 <doc>Customer create 1 tasks, 1 task deleted.</doc>
-<status status="PASS" start="2024-07-12T00:26:14.950757" elapsed="3.925573"/>
+<status status="PASS" start="2024-07-12T00:49:55.063175" elapsed="3.970620"/>
 </test>
 <test id="s1-s1-s1-t5" name="TC_Input_Tasks_itemName_isNotEMPTY" line="72">
 <kw name="Open Web Browser" owner="TodoListTestStep" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:18.879830" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<msg time="2024-07-12T00:49:59.037295" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
 <arg>url=${URL}</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-12T00:26:18.879830" elapsed="1.663431"/>
+<status status="PASS" start="2024-07-12T00:49:59.036797" elapsed="1.635857"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-12T00:26:20.543759" elapsed="0.019197"/>
+<status status="PASS" start="2024-07-12T00:50:00.672654" elapsed="0.032649"/>
 </kw>
 <arg>${URL_WEB_TESTING}</arg>
 <doc>Open Browser following URL</doc>
-<status status="PASS" start="2024-07-12T00:26:18.879330" elapsed="1.684126"/>
+<status status="PASS" start="2024-07-12T00:49:59.036295" elapsed="1.669008"/>
 </kw>
 <kw name="Input ItemName" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//input[@id="new-task"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:20.564456" elapsed="0.015499"/>
+<status status="PASS" start="2024-07-12T00:50:00.706810" elapsed="0.015500"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:20.580458" level="INFO">Typing text '' into text field '//input[@id="new-task"]'.</msg>
+<msg time="2024-07-12T00:50:00.723311" level="INFO">Typing text '' into text field '//input[@id="new-task"]'.</msg>
 <arg>locator=//input[@id="new-task"]</arg>
 <arg>text=${Name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:20.580458" elapsed="0.042507"/>
+<status status="PASS" start="2024-07-12T00:50:00.722809" elapsed="0.043500"/>
 </kw>
 <doc>Input to textfield 'ItemName'</doc>
-<status status="PASS" start="2024-07-12T00:26:20.563956" elapsed="0.059009"/>
+<status status="PASS" start="2024-07-12T00:50:00.705303" elapsed="0.061006"/>
 </kw>
 <kw name="Verify Empty List ToDoTask Tab" owner="TodoListTestStep">
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:20.628464" level="INFO">Element '//ul[@id="incomplete-tasks"]//li' did not exist.</msg>
+<msg time="2024-07-12T00:50:00.772309" level="INFO">Element '//ul[@id="incomplete-tasks"]//li' did not exist.</msg>
 <arg>//ul[@id="incomplete-tasks"]//li</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:20.623464" elapsed="0.005500"/>
+<status status="PASS" start="2024-07-12T00:50:00.766809" elapsed="0.005500"/>
 </kw>
 <doc>Verify Empty List ToDoTask</doc>
-<status status="PASS" start="2024-07-12T00:26:20.623464" elapsed="0.005500"/>
+<status status="PASS" start="2024-07-12T00:50:00.766809" elapsed="0.005500"/>
 </kw>
 <kw name="Verify Empty List Completed Tab" owner="TodoListTestStep">
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:20.633964" level="INFO">Element '//li[@class="mdl-list"]' did not exist.</msg>
+<msg time="2024-07-12T00:50:00.780810" level="INFO">Element '//li[@class="mdl-list"]' did not exist.</msg>
 <arg>//li[@class="mdl-list"]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:20.629465" elapsed="0.004999"/>
+<status status="PASS" start="2024-07-12T00:50:00.773311" elapsed="0.007499"/>
 </kw>
 <doc>Verify Empty List on Completed Tab</doc>
-<status status="PASS" start="2024-07-12T00:26:20.629465" elapsed="0.004999"/>
+<status status="PASS" start="2024-07-12T00:50:00.772809" elapsed="0.008001"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-12T00:26:20.634464" elapsed="2.067918"/>
+<status status="PASS" start="2024-07-12T00:50:00.781310" elapsed="2.067871"/>
 </kw>
 <doc>Customer input field itemName &lt;&gt; EMPTY, task completed = EMPTY</doc>
-<status status="PASS" start="2024-07-12T00:26:18.879330" elapsed="3.823052"/>
+<status status="PASS" start="2024-07-12T00:49:59.035295" elapsed="3.814387"/>
 </test>
 <test id="s1-s1-s1-t6" name="TC_Input_Tasks_itemName_isEMPTY" line="78">
 <kw name="Open Web Browser" owner="TodoListTestStep" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:22.704382" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<msg time="2024-07-12T00:50:02.853182" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
 <arg>url=${URL}</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-12T00:26:22.703882" elapsed="1.645133"/>
+<status status="PASS" start="2024-07-12T00:50:02.852682" elapsed="1.596705"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-12T00:26:24.349515" elapsed="0.024095"/>
+<status status="PASS" start="2024-07-12T00:50:04.449886" elapsed="0.027008"/>
 </kw>
 <arg>${URL_WEB_TESTING}</arg>
 <doc>Open Browser following URL</doc>
-<status status="PASS" start="2024-07-12T00:26:22.703882" elapsed="1.669728"/>
+<status status="PASS" start="2024-07-12T00:50:02.852682" elapsed="1.624212"/>
 </kw>
 <kw name="Verify Empty List ToDoTask Tab" owner="TodoListTestStep">
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:24.380109" level="INFO">Element '//ul[@id="incomplete-tasks"]//li' did not exist.</msg>
+<msg time="2024-07-12T00:50:04.485894" level="INFO">Element '//ul[@id="incomplete-tasks"]//li' did not exist.</msg>
 <arg>//ul[@id="incomplete-tasks"]//li</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:24.374109" elapsed="0.006501"/>
+<status status="PASS" start="2024-07-12T00:50:04.478394" elapsed="0.007500"/>
 </kw>
 <doc>Verify Empty List ToDoTask</doc>
-<status status="PASS" start="2024-07-12T00:26:24.374109" elapsed="0.006501"/>
+<status status="PASS" start="2024-07-12T00:50:04.477895" elapsed="0.008500"/>
 </kw>
 <kw name="Verify Empty List Completed Tab" owner="TodoListTestStep">
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:24.387110" level="INFO">Element '//li[@class="mdl-list"]' did not exist.</msg>
+<msg time="2024-07-12T00:50:04.493399" level="INFO">Element '//li[@class="mdl-list"]' did not exist.</msg>
 <arg>//li[@class="mdl-list"]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:24.381110" elapsed="0.007000"/>
+<status status="PASS" start="2024-07-12T00:50:04.486894" elapsed="0.006505"/>
 </kw>
 <doc>Verify Empty List on Completed Tab</doc>
-<status status="PASS" start="2024-07-12T00:26:24.381110" elapsed="0.007000"/>
+<status status="PASS" start="2024-07-12T00:50:04.486395" elapsed="0.007004"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-12T00:26:24.388609" elapsed="2.066198"/>
+<status status="PASS" start="2024-07-12T00:50:04.493899" elapsed="2.078776"/>
 </kw>
 <doc>Customer input field itemName = EMPTY, task completed = EMPTY</doc>
-<status status="PASS" start="2024-07-12T00:26:22.703381" elapsed="3.751927"/>
+<status status="PASS" start="2024-07-12T00:50:02.852182" elapsed="3.720993"/>
 </test>
 <test id="s1-s1-s1-t7" name="TC_Create_Tasks_itemName_isEMPTY" line="83">
 <kw name="Open Web Browser" owner="TodoListTestStep" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:26.457309" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<msg time="2024-07-12T00:50:06.575175" level="INFO">Opening browser 'chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
 <arg>url=${URL}</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-12T00:26:26.457309" elapsed="1.634688"/>
+<status status="PASS" start="2024-07-12T00:50:06.574675" elapsed="1.622482"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-12T00:26:28.092497" elapsed="0.018004"/>
+<status status="PASS" start="2024-07-12T00:50:08.197157" elapsed="0.017020"/>
 </kw>
 <arg>${URL_WEB_TESTING}</arg>
 <doc>Open Browser following URL</doc>
-<status status="PASS" start="2024-07-12T00:26:26.456808" elapsed="1.653693"/>
+<status status="PASS" start="2024-07-12T00:50:06.574675" elapsed="1.639502"/>
 </kw>
 <kw name="Click Button Create Item" owner="TodoListComponent">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-07-12T00:26:28.111001" elapsed="0.017006"/>
+<status status="PASS" start="2024-07-12T00:50:08.215178" elapsed="0.021999"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:28.129007" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
+<msg time="2024-07-12T00:50:08.237676" level="INFO">Clicking button '//button[@data-upgraded=",MaterialButton"]'.</msg>
 <arg>locator=//button[@data-upgraded=",MaterialButton"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-12T00:26:28.128507" elapsed="0.031500"/>
+<status status="PASS" start="2024-07-12T00:50:08.237177" elapsed="0.031339"/>
 </kw>
 <doc>Click Button for Add item to 'To Do List'</doc>
-<status status="PASS" start="2024-07-12T00:26:28.110501" elapsed="0.049506"/>
+<status status="PASS" start="2024-07-12T00:50:08.214676" elapsed="0.053840"/>
 </kw>
 <kw name="Verify Empty List ToDoTask Tab" owner="TodoListTestStep">
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:28.166007" level="INFO">Element '//ul[@id="incomplete-tasks"]//li' did not exist.</msg>
+<msg time="2024-07-12T00:50:08.274517" level="INFO">Element '//ul[@id="incomplete-tasks"]//li' did not exist.</msg>
 <arg>//ul[@id="incomplete-tasks"]//li</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:28.161007" elapsed="0.005500"/>
+<status status="PASS" start="2024-07-12T00:50:08.269016" elapsed="0.006002"/>
 </kw>
 <doc>Verify Empty List ToDoTask</doc>
-<status status="PASS" start="2024-07-12T00:26:28.160508" elapsed="0.005999"/>
+<status status="PASS" start="2024-07-12T00:50:08.269016" elapsed="0.006002"/>
 </kw>
 <kw name="Verify Empty List Completed Tab" owner="TodoListTestStep">
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-07-12T00:26:28.173007" level="INFO">Element '//li[@class="mdl-list"]' did not exist.</msg>
+<msg time="2024-07-12T00:50:08.280517" level="INFO">Element '//li[@class="mdl-list"]' did not exist.</msg>
 <arg>//li[@class="mdl-list"]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-07-12T00:26:28.167007" elapsed="0.006000"/>
+<status status="PASS" start="2024-07-12T00:50:08.275517" elapsed="0.005499"/>
 </kw>
 <doc>Verify Empty List on Completed Tab</doc>
-<status status="PASS" start="2024-07-12T00:26:28.166507" elapsed="0.007000"/>
+<status status="PASS" start="2024-07-12T00:50:08.275517" elapsed="0.005499"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-12T00:26:28.173507" elapsed="2.064668"/>
+<status status="PASS" start="2024-07-12T00:50:08.281016" elapsed="2.061998"/>
 </kw>
 <doc>Customer create task itemName = EMPTY, task completed = EMPTY</doc>
-<status status="PASS" start="2024-07-12T00:26:26.456308" elapsed="3.781867"/>
+<status status="PASS" start="2024-07-12T00:50:06.573675" elapsed="3.769339"/>
 </test>
 <doc>Component Test Suite</doc>
-<status status="PASS" start="2024-07-12T00:26:02.026486" elapsed="28.214690"/>
+<status status="PASS" start="2024-07-12T00:49:41.822649" elapsed="28.521367"/>
 </suite>
-<status status="PASS" start="2024-07-12T00:26:02.024987" elapsed="28.218689"/>
+<status status="PASS" start="2024-07-12T00:49:41.821149" elapsed="28.523868"/>
 </suite>
-<status status="PASS" start="2024-07-12T00:26:02.012486" elapsed="28.234189"/>
+<status status="PASS" start="2024-07-12T00:49:41.807650" elapsed="28.538366"/>
 </suite>
 <statistics>
 <total>

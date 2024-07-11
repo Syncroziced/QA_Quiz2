@@ -7,9 +7,9 @@ Test Teardown     Close Browser
 
 
 *** Variables ***
+${URL_WEB_TESTING}       https://abhigyank.github.io/To-Do-List/
 ${TASK1}   Register
 ${TASK2}   Login
-${URL_WEB_TESTING}       https://abhigyank.github.io/To-Do-List/
 
 
 *** Test Cases ***
