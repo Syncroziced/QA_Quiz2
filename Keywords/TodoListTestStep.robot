@@ -2,6 +2,8 @@
 Documentation     Component Test Step
 Library           SeleniumLibrary
 Resource          ../Keywords/TodoListComponent.robot
+
+
 *** Keywords ***
 # Teststep
 Open Web Browser
@@ -36,6 +38,7 @@ Create Item
 Verify ToDoTask
     [Documentation]  Verify task added on TO DO LIST
     [Arguments]    ${expectedList}=${EMPTY}
+    Switch Tab          Name=TO_DO_TASKS
     ${index}     Evaluate    0
     FOR    ${taskName}   IN   @{expectedList}
         ${index}    Evaluate    ${index} + 1
@@ -61,6 +64,7 @@ Verify Empty List ToDoTask Tab
 Verify Completed
     [Documentation]  Verify Completed List from To Done List
     [Arguments]    ${expectedDoneList}=${EMPTY}
+    Switch Tab          Name=COMPLETED
     ${index}     Evaluate    0
     FOR    ${taskName}   IN   @{expectedDoneList}    # robotcode: ignore
         ${index}    Evaluate    ${index} + 1
