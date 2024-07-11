@@ -40,7 +40,7 @@ Verify ToDoTask
     FOR    ${taskName}   IN   @{expectedList}
         ${index}    Evaluate    ${index} + 1
         Log         ${taskName}
-        Element Text Should Be     locator=//input[@id="${index}"]/..//span[contains(text(),'${taskName}')]  
+        Element Text Should Be     locator=//input[@id="${index}"]/..//span[contains(text(),'${taskName}')]
         ...    expected=${taskName}
     END
 
@@ -51,7 +51,7 @@ To Done Task
         Log         ${taskName}
         Click Element       locator=//label[@for="1"]
         Element Should Not Be Visible   
-        ...    locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]  
+        ...    locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]
     END
 
 Verify Empty List ToDoTask Tab
@@ -66,7 +66,7 @@ Verify Completed
         ${index}    Evaluate    ${index} + 1
         Log         ${taskName}
         Element Text Should Be
-        ...    locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]  
+        ...    locator=//span[@class='mdl-list__item-primary-content' and contains(text(), '${taskName}')]
         ...    expected=done${taskName}
     END
 
