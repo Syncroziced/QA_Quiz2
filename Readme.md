@@ -25,6 +25,7 @@ Depending on the browser you want to use, download and install the corresponding
 
 
 3.Project Structure
+<pre>
 QA_Quiz2/
 │
 ├── Keywords/
@@ -41,7 +42,7 @@ QA_Quiz2/
 │
 └── README.md
 └── Testcase.xlsx
-
+</pre>
 4.Running Tests
 ต้องติดตั้ง Plugins เพิ่มเติม
 
